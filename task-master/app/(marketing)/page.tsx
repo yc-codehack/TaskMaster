@@ -44,7 +44,7 @@ const MarketingPage = () => {
         Collaborate | Manage | Productivity 🚀
       </div>
       <Button className="mt-6" size="lg" asChild>
-        <Link href="..">Get Taskigy for free</Link>
+        <Link href="./sign-up">Get Taskigy for free</Link>
       </Button>
     </div>
   );
