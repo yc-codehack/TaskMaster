@@ -1,5 +1,6 @@
-import { ClerkProvider } from "@clerk/nextjs";
 import { ReactNode } from "react";
+import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 type PlaneLayoutPropsType = {
   children: ReactNode;
@@ -8,7 +9,15 @@ type PlaneLayoutPropsType = {
 const PlatformLayout = (props: PlaneLayoutPropsType) => {
   const { children } = props;
 
-  return <ClerkProvider>{children}</ClerkProvider>;
+  return (
+    <ClerkProvider
+      appearance={{
+        baseTheme: dark,
+      }}
+    >
+      {children}
+    </ClerkProvider>
+  );
 };
 
 export default PlatformLayout;

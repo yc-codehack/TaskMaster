@@ -12,7 +12,7 @@ export const Logo = () => {
   return (
     <Link href="./">
       <div className="p-2 hover:opacity-75 transition items-center gap-x-2 hidden md:flex ">
-        <Image src="./logo.svg" alt="Logo" width={30} height={30} />
+        <Image src="/logo.svg" alt="Logo" width={30} height={30} />
         <p className={cn("text-lg text-neutral-500", logoFont.className)}>
           Taskify
         </p>
