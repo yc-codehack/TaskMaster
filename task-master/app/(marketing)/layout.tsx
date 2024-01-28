@@ -1,5 +1,8 @@
 import { ReactNode } from "react";
 
+import { Navbar } from "./_components/navbar";
+import { Footer } from "./_components/footer";
+
 type type = {
   children: ReactNode;
 };
@@ -9,12 +12,11 @@ const MarketingLayout = (props: type) => {
 
   return (
     <div className="h-full">
-      {/* navbar */}
+      <Navbar />
 
-      {/* main */}
       <main className="pt-40 pb-20">{children}</main>
 
-      {/* footer */}
+      <Footer />
     </div>
   );
 };
